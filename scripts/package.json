@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "fetch-data": "ts-node fetch-data.ts",
-    "dev:fetch-data": "nodemon -w fetch-data.ts -w fetch.ts -w tsconfig.json ts-node -x 'ts-node fetch-data.ts'",
+    "dev:fetch-data": "nodemon -e ts -x 'ts-node fetch-data.ts'",
     "test": "mocha -r ts-node/register test/*.spec.ts"
   },
   "dependencies": {

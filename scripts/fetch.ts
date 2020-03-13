@@ -41,14 +41,15 @@ class StorageCache {
 
 const CACHE = new StorageCache();
 
-const fetch = async (url) => {
+const fetch = async (url: string): Promise<string> => {
     let result = await CACHE.get(url);
     if (result) {
         return result;
     }
     const resp = await axios.get<string>(url);
-    await CACHE.set(url, resp.data);
-    return resp;
+    const data = resp.data;
+    await CACHE.set(url, data);
+    return data;
 };
 
 export { fetch };
