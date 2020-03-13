@@ -12,6 +12,7 @@
     "@types/chai": "^4.2.10",
     "@types/mocha": "^7.0.2",
     "@types/node": "^13.9.1",
+    "axios": "^0.19.2",
     "chai": "^4.2.0",
     "mocha": "^7.1.0",
     "nodemon": "^2.0.2",
