@@ -1,0 +1,6 @@
+---
+extends: "tslint:recommended"
+rules:
+  max-line-length:
+    options: [80]
+  no-console: false

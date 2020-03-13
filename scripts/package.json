@@ -1,0 +1,17 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "fetch-data": "ts-node fetch-data.ts",
+    "dev:fetch-data": "nodemon -w -fetch-data.ts -w tsconfig.json ts-node -x 'ts-node fetch-data.ts'"
+  },
+  "dependencies": {
+    "@types/node": "^13.9.1",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.6.2",
+    "tslint": "^6.1.0",
+    "typescript": "^3.8.3"
+  }
+}
